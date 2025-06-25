@@ -1,0 +1,17 @@
+
+body{
+    background-color: brown;
+    background-image: url(../Imagens/logoSerra.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: fixed;
+    background-size: auto, cover;
+
+
+
+
+
+}
+h1{color: beige; text-align: center; font-family: comic-sans, cursive;}
+h2{color: aquamarine;}
+p{color: navy; font-family: Georgia, 'Times New Roman', Times, serif;}
