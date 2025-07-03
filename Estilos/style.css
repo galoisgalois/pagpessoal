@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 20px; 
+}
+.form-container {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 500px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.header {
+    background-color: #808080;
+    color: #ffffff;
+    padding: 10px;
+    font-weight: bold;
+    text-align: left;
+    margin: -20px -20px 20px -20px;
+    font-size: 1.1em;
+}
+.form-group {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 10px;
+}
+.form-group label {
+    width: 120px; 
+    text-align: right; 
+    margin-right: 10px;
+    font-weight: normal;
+}
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group select,
+.form-group textarea {
+    flex-grow: 1; 
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+}
+.form-group.radio-group,
+.form-group.checkbox-group {
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+}
+.form-group.radio-group label,
+.form-group.checkbox-group label {
+    text-align: left;
+    width: auto;
+    margin-right: 15px; 
+}
+.form-group input[type="radio"] + label,
+.form-group input[type="checkbox"] + label {
+    margin-left: 5px; 
+    margin-right: 0; 
+}
+.form-group.radio-group input[type="radio"],
+.form-group.checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+.checkboxes-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.checkboxes-container .checkbox-item {
+    margin-right: 20px;
+    white-space: nowrap; 
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; 
+}
+.checkboxes-container .checkbox-item:last-child {
+    margin-right: 0;
+}
+.form-group.align-start {
+    align-items: flex-start; 
+}
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+.date-input-container {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+.date-input-container input {
+    padding-right: 30px;
+    flex-grow: 1;
+    width: 100%;
+}
+.calendar-icon-wrapper {
+    position: absolute; 
+    right: 8px; 
+    cursor: pointer;
+    display: flex;
+    align-items: center; 
+    height: 100%; 
+    top: 0;
+    fill: #000; 
+}
+.calendar-icon-wrapper svg {
+    width: 18px; 
+    height: 18px;
+    vertical-align: middle;
+}
+.button-group {
+    margin-top: 20px;
+    text-align: left;
+}
+.button-group button {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-right: 10px;
+}
+
+.button-group button:hover {
+    background-color: #d0d0d0;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manutenção de Usuário</title>
+    <link rel="stylesheet" href="Estilos/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="header">MANUTENÇÃO DE USUÁRIO DO SISTEMA INTERNO</div>
+        <form>
+            <div class="form-group"><label for="login">Login</label><input type="text" id="login" name="login"></div>
+            <div class="form-group"><label for="senha">Senha</label><input type="password" id="senha" name="senha"></div>
+            <div class="form-group">
+                <label for="status">Status</label>
+                <select id="status" name="status">
+                    <option value="ativo" selected>Ativo</option>
+                    <option value="inativo">Inativo</option>
+                </select>
+            </div>
+            <div class="form-group radio-group"><label>Tipo</label><div><input type="radio" id="tipoTecnico" name="tipo" value="tecnico"><label for="tipoTecnico">Técnico</label><input type="radio" id="tipoProfessor" name="tipo" value="professor"><label for="tipoProfessor">Professor</label><input type="radio" id="tipoAluno" name="tipo" value="aluno"><label for="tipoAluno">Aluno</label></div></div>
+            <div class="form-group">
+                <label for="dataCriacao">Data da Criação</label>
+                <div class="date-input-container">
+                    <input type="text" id="dataCriacao" name="dataCriacao" placeholder="dd/mm/aaaa">
+                    <span class="calendar-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM7 11h5v5H7z"/></svg>
+                    </span>
+                </div>
+            </div>
+            <div class="form-group radio-group"><label>Perfil</label><div><input type="radio" id="perfilConvidado" name="perfil" value="convidado"><label for="perfilConvidado">Convidado</label><input type="radio" id="perfilAdministrador" name="perfil" value="administrador"><label for="perfilAdministrador">Administrador</label></div></div>
+            <div class="form-group align-start"><label for="comentarios">Comentários</label><textarea id="comentarios" name="comentarios"></textarea></div>
+            <div class="form-group"><label>Tipo</label><div class="checkboxes-container"><div class="checkbox-item"><input type="checkbox" id="tipoCompras" name="tipoPermissao[]" value="compras"><label for="tipoCompras">Compras</label></div><div class="checkbox-item"><input type="checkbox" id="tipoBiblioteca" name="tipoPermissao[]" value="biblioteca"><label for="tipoBiblioteca">Biblioteca</label></div><div class="checkbox-item"><input type="checkbox" id="tipoAcademico" name="tipoPermissao[]" value="academico"><label for="tipoAcademico">Acadêmico</label></div><div class="checkbox-item"><input type="checkbox" id="tipoDocumentacao" name="tipoPermissao[]" value="documentacao"><label for="tipoDocumentacao">Documentação</label></div><div class="checkbox-item"><input type="checkbox" id="tipoRH" name="tipoPermissao[]" value="recursosHumanos"><label for="tipoRH">Recursos Humanos</label></div></div></div>
+            <div class="button-group"><button type="submit">Cadastrar</button><button type="button">Excluir</button></div>
+        </form>
+    </div>
+</body>
+</html>
