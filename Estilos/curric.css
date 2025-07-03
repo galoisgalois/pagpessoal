@@ -1,0 +1,178 @@
+/* Estilos Gerais do Corpo da Página */
+body {
+    background-color: #ade3f3; /* Cor de fundo que você definiu */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Para centralizar o wrapper do currículo */
+    justify-content: center;
+    align-items: flex-start; /* Alinha o conteúdo no topo da página */
+    min-height: 100vh;
+}
+
+/* Contêiner Principal do Currículo */
+.curriculo-wrapper {
+    width: 600px; /* Largura fixa do currículo, como na sua ideia original para o body */
+    margin: 20px auto; /* Margem superior/inferior e centraliza */
+    background-color: #ffffff; /* Fundo branco para a "folha" do currículo */
+    border: 1px solid #ccc; /* Borda geral do currículo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px; /* Padding interno para o wrapper, se necessário */
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+}
+
+/* Estilo para o nome da pessoa */
+h2 {
+    font-family: Georgia, cursive;
+    text-align: center;
+    margin-top: 15px; /* Ajusta o espaçamento superior */
+    margin-bottom: 20px; /* Espaçamento abaixo do nome */
+    color: #333;
+}
+
+/* Seção Superior - Contêiner Flexível para as duas colunas */
+.top-section-container {
+    display: flex; /* Habilita o layout flexível */
+    gap: 10px; /* Espaçamento entre a coluna da esquerda e a DIV6 */
+    margin-bottom: 10px; /* Margem abaixo desta seção */
+    flex-wrap: wrap; /* Permite que as colunas quebrem linha em telas menores */
+}
+
+/* Coluna da Esquerda (agrupando DIV1 e DIV2) */
+.left-column {
+    display: flex;
+    flex-direction: column; /* DIV1 e DIV2 empilhadas */
+    gap: 10px; /* Espaçamento entre DIV1 e DIV2 */
+    flex: 2; /* Ocupa mais espaço na proporção (aprox. 2/3 da largura disponível) */
+    min-width: 250px; /* Garante que não encolha demais em telas pequenas */
+}
+
+/* Estilos Comuns para as Caixas (DIV1, DIV2, DIV6, Formações, etc.) */
+/* Note que a imagem mostra bordas vermelhas que parecem ser do design,
+   mas vamos usar uma borda sutil e sua imagem de fundo se desejar. */
+.div1, .div2, .div6,
+.formacao, .complementares, .softskills {
+    padding: 10px;
+    border: 1px solid #ccc; /* Borda sutil para as caixas */
+    background-color: #ffffff; /* Fundo branco para as caixas, como na imagem */
+    margin-bottom: 0; /* Gerenciado pelo gap ou margin do pai */
+    box-sizing: border-box; /* Inclui padding e borda na largura/altura */
+    /* Se você quiser o background-image do watercolor: */
+    /* background-image: url("../Imagens/watercolor.png"); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+}
+
+/* Estilos Específicos para DIV1 (Foto) */
+.div1 {
+    width: 100%; /* Ocupa a largura total da left-column */
+    text-align: center; /* Centraliza a imagem */
+    /* Na imagem original, o fundo de corações está na div1 ou atrás dela. */
+    /* Para a imagem de corações, você pode usar um background-image aqui: */
+    background-image: url("../Imagens/coracoes.png"); /* Substitua 'coracoes.png' pela sua imagem */
+    background-size: contain; /* Ou 'cover', dependendo do efeito desejado */
+    background-repeat: no-repeat;
+    background-position: center top; /* Ajuste a posição */
+    min-height: 200px; /* Altura mínima para mostrar o background */
+    padding-top: 15px; /* Espaço para o background no topo */
+}
+
+.div1 .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Faz a imagem ser circular */
+    border: 2px solid #ccc; /* Borda ao redor da imagem */
+    object-fit: cover; /* Garante que a imagem preencha o círculo sem distorção */
+    display: block; /* Remove espaço extra abaixo da imagem */
+    margin: 0 auto 10px auto; /* Centraliza a imagem horizontalmente e adiciona margem inferior */
+}
+
+/* Estilos Específicos para DIV2 (Contato) */
+.div2 {
+    width: 100%; /* Ocupa a largura total da left-column */
+    padding-top: 15px; /* Ajusta se houver background na div1 que precisa de espaço */
+    padding-bottom: 15px;
+}
+
+.div2 p {
+    margin: 5px 0; /* Espaçamento entre os parágrafos de contato */
+    line-height: 1.4;
+    font-size: 0.95em;
+}
+
+
+/* Estilos Específicos para DIV6 (Preferências) */
+.div6 {
+    flex: 1; /* Ocupa o restante do espaço na top-section-container (aprox. 1/3) */
+    text-align: center;
+    min-width: 200px; /* Garante que não encolha demais */
+    display: flex; /* Para centralizar conteúdo verticalmente se necessário */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Adicione a imagem de fundo 'Coloque suas Preferencias' se for um background da div */
+    /* background-image: url("../Imagens/suas_preferencias_bg.png"); */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+}
+
+.div6 ul {
+    list-style-type: disc;
+    margin-left: 20px; /* Recuo da lista */
+    text-align: left; /* Garante que os itens da lista não fiquem centralizados */
+    padding-left: 0;
+    margin-top: 10px; /* Espaçamento do título da lista */
+}
+
+.div6 ul li {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+/* Estilos para as Seções Inferiores (Formações, Soft Skills) */
+.formacao,
+.complementares,
+.softskills {
+    margin-bottom: 10px; /* Espaçamento entre as seções */
+}
+
+.formacao h3,
+.complementares h3,
+.softskills h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #555;
+    border-bottom: 1px solid #eee; /* Linha sutil abaixo do título da seção */
+    padding-bottom: 5px;
+}
+
+.formacao ul,
+.complementares ul,
+.softskills ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+.formacao ul li,
+.complementares ul li,
+.softskills ul li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.formacao ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.formacao ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Ajustes finos */
+strong {
+    font-weight: bold;
+}

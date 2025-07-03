@@ -1,40 +1,13 @@
-
-body{
-    background-color: brown;
-    background-image: url(../Imagens/logoSerra.png);
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-attachment: fixed;
-    background-size: auto, cover;
-
-
-
-
-
-}
-h1{color: beige; text-align: center; font-family: comic-sans, cursive;}
-h2{color: aquamarine;}
-p{color: rgb(255, 255, 255); font-family: Georgia, 'Times New Roman', Times, serif;}
-
-.Borda {
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 4px 4px 10px rgba(0,0,0.2);
-    padding: 15px;
-    margin: 20px auto;
-    max-width: 600px;
-    background-image: url("../Imagens/fancy.png");
-    background-color: #000000;
-}
-a {
-    text-decoration: nome;
-    color: #e0eeee;
-    font-weight: bold;
-    transition: 0.3s;
-}
-a:hover {
-    color: #ff4500;
-}
-a:active {
-    color: purple;
-}
+body{background-color:brown;background-image:url(../Imagens/logoSerra.png);background-repeat:no-repeat;background-position:top right;background-attachment:fixed;background-size:auto}
+h1{color:beige;text-align:center;font-family:"Comic Sans MS",cursive}
+h2,h3{color:aquamarine; text-align:center;}
+p{color:#fff;font-family:Georgia,'Times New Roman',Times,serif}
+.avatar-centralizado{display:block;margin:0 auto;width:200px;height:200px;border-radius:50%;object-fit:cover}
+.apresentacao-borda{border:2px solid #ccc;border-radius:10px;box-shadow:4px 4px 10px rgba(0,0,0,.2);padding:15px;margin:20px auto;max-width:600px;background-image:url("../Imagens/fancy.png");background-color:#000}
+.secao-paragrafo{background-color:#000;padding:5px;margin-bottom:10px}
+a{text-decoration:none;color:#e0eeee;font-weight:700;transition:.3s}
+a:hover{color:#ff4500}
+a:active{color:purple}
+.minha-instituicao img{display:block;margin:15px auto;max-width:200px;height:auto}
+.links-box{border:1px solid #777;border-radius:8px;padding:15px;margin:20px auto;max-width:250px;background-color:#333;text-align:center}
+.links-box p{margin:5px 0}
