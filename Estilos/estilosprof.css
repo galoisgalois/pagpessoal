@@ -1,0 +1,158 @@
+.layout {
+    display: flex;
+    
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    flex: 1; 
+    padding: 20px;
+}
+
+aside {
+    width: 200px; 
+    background-image: url("../Imagens/fancy.png");
+    padding: 20px;
+    border: 5px solid #000000;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0; 
+}
+
+aside .aside-nav-buttons a {
+    display: block;
+    background-color: #3498db; 
+    color: white;
+    margin-bottom: 15px; 
+    padding: 12px 15px; 
+    text-align: center;
+    border-radius: 8px; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+aside .aside-nav-buttons a:hover {
+    transform: scale(1.05); 
+    background-color: #2980b9; 
+}
+
+.avatar {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.campus {
+    display: block;
+    margin: 20px auto; 
+    width: 300px;
+    max-width: 100%; 
+    height: auto;
+}
+
+header {
+    display: flex; 
+    flex-flow: row nowrap; 
+    justify-content: space-between; 
+    align-items: center;
+    height: 80px; 
+    background-image: url("../Imagens/fancy.png");
+    padding: 0 20px;
+    border: 5px solid #000000;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo-header {
+    width: 55px;
+    height: auto;
+}
+
+header h1 { 
+    margin: 0; 
+    flex-grow: 1; 
+    text-align: center; 
+    font-family: "Brush Script MT", cursive;
+    color: #FFFFFF !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+header nav {
+    margin-left: 20px; 
+}
+
+header nav a {
+    margin: 0 10px;
+    color: rgb(168, 179, 175);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; 
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: #f0f0f0; 
+}
+
+footer {
+    background-image: url("../Imagens/fancy.png");
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    border: 5px solid #000000; 
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    background-image: url("../Imagens/fancy.png"); 
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0; 
+}
+
+h2 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-image: url("../Imagens/fancy.png");
+    color: #FFFFFF !important;
+    padding: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    margin-top: 40px; 
+    margin-bottom: 20px; 
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #d3caca;
+}
+
+.TextoBorda {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(190, 189, 189, 0.2);
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+    background-image: url("../Imagens/fancy.png");
+}
+
+
+a {
+    text-decoration: none;
+    color: #e0eeee; 
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #ff4500;
+}
+
+a:active {
+    color: red;
+}
